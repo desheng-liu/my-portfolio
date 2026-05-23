@@ -17,7 +17,7 @@ function Nav() {
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
       <NavLink to="/" className="nav-logo">
-        Your<span>Name</span>
+        <span>Desheng Liu</span>
       </NavLink>
       <div className="nav-links">
         <NavLink to="/" end>Home</NavLink>
