@@ -24,7 +24,7 @@ export default function BlogPost() {
     </div>
   );
 
-  if (notFound) return (
+  if (notFound || !post) return (
     <div className="page" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 160, gap: 20 }}>
       <p style={{ fontFamily: 'var(--font-display)', fontSize: '2rem' }}>Post not found.</p>
       <Link to="/blog" className="btn">← Back to Blog</Link>

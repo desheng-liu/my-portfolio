@@ -10,8 +10,21 @@ export default function Blog() {
   useEffect(() => {
     fetch(`${API}/posts`)
       .then(r => r.json())
-      .then(data => setPosts(data))
-      .catch(() => setPosts([]))
+      .then(data => {
+        // Accept either an array response or an object with `posts` array
+        if (Array.isArray(data)) {
+          setPosts(data);
+        } else if (data && Array.isArray(data.posts)) {
+          setPosts(data.posts);
+        } else {
+          console.error('Unexpected posts response from API:', data);
+          setPosts([]);
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to fetch posts', err);
+        setPosts([]);
+      })
       .finally(() => setLoading(false));
   }, []);
 
@@ -38,7 +51,7 @@ export default function Blog() {
         )}
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          {posts.map((post, i) => (
+          {(Array.isArray(posts) ? posts : []).map((post, i) => (
             <Link
               key={post.slug}
               to={`/blog/${post.slug}`}

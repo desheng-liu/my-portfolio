@@ -51,14 +51,13 @@ export default function Home() {
             marginBottom: 28,
           }}>
             Hi, I'm <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Desheng Liu</span>.<br/>
-            I build things for the web.
+            Welcome to my personal website.
           </h1>
           <p className="fade-up fade-up-2" style={{
             fontSize: '1.15rem', color: 'var(--ink-muted)',
             maxWidth: 520, lineHeight: 1.7, marginBottom: 40,
           }}>
-            Full-stack developer focused on clean architecture, thoughtful UX,
-            and shipping things that actually work. Based in Texas.
+            Software engineer out of Dallas, TX. I build things for fun and for work.
           </p>
           <div className="fade-up fade-up-3" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
             <Link to="/projects" className="btn btn-fill">View Projects</Link>
@@ -79,8 +78,7 @@ export default function Home() {
               and writing about what I learn along the way.
             </p>
             <p style={{ color: 'var(--ink-muted)', lineHeight: 1.8, marginBottom: 32 }}>
-              When I'm not coding, you can find me exploring open-source projects,
-              writing blog posts, or tinkering with new technologies.
+              When I'm not coding, I'm playing basketball, soccer, or video games. One of the three!
             </p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               {['React', 'Node.js', 'AWS', 'TypeScript', 'PostgreSQL'].map(skill => (
@@ -103,7 +101,7 @@ export default function Home() {
               fontFamily: 'var(--font-display)', fontSize: '1.4rem',
               fontStyle: 'italic', lineHeight: 1.5, color: 'var(--ink)',
             }}>
-              Good code is like good prose — clear, purposeful, and a pleasure to read.
+              There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle. -- Albert Einstein
             </p>
           </div>
         </div>
