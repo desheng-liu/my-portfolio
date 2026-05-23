@@ -41,7 +41,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
       <footer>
-        <span>© {new Date().getFullYear()} Your Name</span>
+        <span>© {new Date().getFullYear()} Desheng Liu</span>
         <div style={{ display: 'flex', gap: 24 }}>
           <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // ── Set your GitHub username here ──
-const GITHUB_USERNAME = 'yourusername';
+const GITHUB_USERNAME = 'desheng-liu';
 // Optionally pin specific repos (by name) to show first. Leave empty to show all.
 const PINNED = ['my-cool-project', 'another-project'];
 // ───────────────────────────────────
