@@ -7,8 +7,6 @@ const RESUME = {
   location: 'Dallas, TX',
   github: 'github.com/desheng-liu',
   linkedin: 'linkedin.com/in/liudesheng',
-  summary:
-    'Software engineering student at The University of Texas at Austin with internship experience building full-stack products, APIs, and cloud services across finance, airline, and defense domains. Strong focus on reliability, test coverage, and scalable architecture.',
   experience: [
     {
       company: 'JPMorgan Chase & Co.',
@@ -165,14 +163,7 @@ export default function Resume() {
           <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn" style={{ fontSize: '0.8rem' }}>
             View PDF
           </a>
-          <a href="/resume.pdf" download className="btn" style={{ fontSize: '0.8rem' }}>
-            Download PDF
-          </a>
         </div>
-
-        <Section label="Summary">
-          <p style={{ color: 'var(--ink-muted)', lineHeight: 1.8, maxWidth: 760 }}>{RESUME.summary}</p>
-        </Section>
 
         <Section label="Experience">
           {RESUME.experience.map((job, i) => (
