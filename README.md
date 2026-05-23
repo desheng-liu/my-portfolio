@@ -2,6 +2,8 @@
 
 Personal website with resume, GitHub projects, blog, and newsletter — built with React + Node.js/Express, deployed on AWS.
 
+Live site: http://desheng-9203-portfolio.s3-website-us-east-1.amazonaws.com
+
 ## Stack
 
 | Layer | Tech |
