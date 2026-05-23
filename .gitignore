@@ -5,3 +5,11 @@ node_modules/
 frontend/build/
 *.log
 .npm
+
+# Secrets
+.env*
+!.env.example
+*.key
+*.p12
+*.pfx
+*.crt

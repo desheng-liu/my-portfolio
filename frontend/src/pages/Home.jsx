@@ -50,7 +50,7 @@ export default function Home() {
             maxWidth: 700,
             marginBottom: 28,
           }}>
-            Hi, I'm <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Your Name</span>.<br/>
+            Hi, I'm <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Desheng Liu</span>.<br/>
             I build things for the web.
           </h1>
           <p className="fade-up fade-up-2" style={{

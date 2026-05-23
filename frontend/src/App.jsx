@@ -43,9 +43,9 @@ export default function App() {
       <footer>
         <span>© {new Date().getFullYear()} Desheng Liu</span>
         <div style={{ display: 'flex', gap: 24 }}>
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:you@example.com">Email</a>
+          <a href="https://github.com/desheng-liu" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/liudesheng" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:desheng.liu@example.com">Email</a>
         </div>
       </footer>
     </BrowserRouter>
