@@ -3,8 +3,11 @@ set -euo pipefail
 
 REPO_ROOT="/c/Users/Desheng/Desktop/my-portfolio"
 BUCKET_NAME="desheng-9203-portfolio"
+AWS_BIN="/c/Program Files/Amazon/AWSCLIV2"
 
 cd "$REPO_ROOT/frontend"
+
+export PATH="$PATH:$AWS_BIN"
 
 npm install
 npm run build

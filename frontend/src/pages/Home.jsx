@@ -36,30 +36,17 @@ export default function Home() {
   return (
     <div className="page">
       {/* Hero */}
-      <section style={{
-        minHeight: '90vh', display: 'flex', alignItems: 'center',
-        borderBottom: '1px solid var(--cream-dark)',
-      }}>
-        <div className="container" style={{ paddingTop: 80, paddingBottom: 80 }}>
+      <section className="home-hero">
+        <div className="container home-hero-inner">
           <p className="section-label fade-up">Software Engineer</p>
-          <h1 className="fade-up fade-up-1" style={{
-            fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(3rem, 7vw, 5.5rem)',
-            lineHeight: 1.05,
-            letterSpacing: '-0.03em',
-            maxWidth: 700,
-            marginBottom: 28,
-          }}>
+          <h1 className="fade-up fade-up-1 home-hero-title">
             Hi, I'm <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Desheng Liu</span>.<br/>
             Welcome to my personal website.
           </h1>
-          <p className="fade-up fade-up-2" style={{
-            fontSize: '1.15rem', color: 'var(--ink-muted)',
-            maxWidth: 520, lineHeight: 1.7, marginBottom: 40,
-          }}>
+          <p className="fade-up fade-up-2 home-hero-subtitle">
             Software engineer out of Dallas, TX. I build things for fun and for work.
           </p>
-          <div className="fade-up fade-up-3" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+          <div className="fade-up fade-up-3 home-cta">
             <Link to="/projects" className="btn btn-fill">View Projects</Link>
             <Link to="/resume" className="btn">See Resume</Link>
           </div>
@@ -67,8 +54,8 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section style={{ padding: '100px 0', borderBottom: '1px solid var(--cream-dark)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
+      <section className="home-about">
+        <div className="container home-about-grid">
           <div>
             <p className="section-label">About</p>
             <h2 className="section-title" style={{ marginBottom: 20 }}>A little about me</h2>
@@ -86,21 +73,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div style={{
-            background: 'var(--white)',
-            border: '1px solid var(--cream-dark)',
-            padding: 48,
-            position: 'relative',
-          }}>
-            <div style={{
-              position: 'absolute', top: -12, left: 32,
-              fontFamily: 'var(--font-display)', fontSize: '5rem',
-              color: 'var(--accent)', opacity: 0.15, lineHeight: 1,
-            }}>"</div>
-            <p style={{
-              fontFamily: 'var(--font-display)', fontSize: '1.4rem',
-              fontStyle: 'italic', lineHeight: 1.5, color: 'var(--ink)',
-            }}>
+          <div className="home-quote-card">
+            <div className="home-quote-mark">"</div>
+            <p className="home-quote-text">
               There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle. -- Albert Einstein
             </p>
           </div>
@@ -108,8 +83,8 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section style={{ padding: '100px 0', background: 'var(--ink)' }}>
-        <div className="container" style={{ maxWidth: 600, textAlign: 'center' }}>
+      <section className="home-newsletter">
+        <div className="container home-newsletter-inner">
           <p className="section-label" style={{ color: 'var(--accent-warm)' }}>Newsletter</p>
           <h2 style={{
             fontFamily: 'var(--font-display)',
@@ -127,7 +102,7 @@ export default function Home() {
               ✓ {msg}
             </p>
           ) : (
-            <form onSubmit={handleSubscribe} style={{ display: 'flex', gap: 0, maxWidth: 440, margin: '0 auto' }}>
+            <form onSubmit={handleSubscribe} className="newsletter-form">
               <input
                 type="email"
                 placeholder="your@email.com"

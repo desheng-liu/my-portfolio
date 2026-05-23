@@ -110,18 +110,7 @@ export default function Resume() {
   return (
     <div className="page">
       <div className="container" style={{ paddingTop: 80, paddingBottom: 100 }}>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            marginBottom: 64,
-            paddingBottom: 48,
-            borderBottom: '1px solid var(--cream-dark)',
-            flexWrap: 'wrap',
-            gap: 32,
-          }}
-        >
+        <div className="resume-header">
           <div>
             <h1
               style={{
@@ -136,16 +125,7 @@ export default function Resume() {
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'var(--accent)', fontWeight: 500 }}>{RESUME.title}</p>
           </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 8,
-              fontSize: '0.875rem',
-              color: 'var(--ink-muted)',
-              textAlign: 'right',
-            }}
-          >
+          <div className="resume-contact">
             <a href={`mailto:${RESUME.email}`} style={{ color: 'var(--accent)' }}>
               {RESUME.email}
             </a>
